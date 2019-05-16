@@ -38,12 +38,6 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 0 auto;
 }
 
-.intro__subtitle {
-	font-size: 72px;
-	color: #fff;
-	font-family: 'Kaushan Script', cursive;
-}
-
 .intro__title {
 	font-size: 150px;
 	font-weight: 700;
@@ -51,6 +45,13 @@ h1, h2, h3, h4, h5, h6 {
 	text-align: center;
 	line-height: 1;
 	color: #fff;
+}
+
+.intro__subtitle {
+	font-size: 72px;
+	color: #fff;
+	font-family: 'Kaushan Script', cursive;
+	text-align: center;
 }
 
 /* Header */
