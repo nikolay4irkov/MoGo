@@ -39,13 +39,13 @@ h1, h2, h3, h4, h5, h6 {
 	width: 100%;
 	max-width: 880px;
 	margin: 0 auto;
+	text-align: center;
 }
 
 .intro__title {
-	font-size: 150px;
+	font-size: 120px;
 	font-weight: 700;
 	text-transform: uppercase;
-	text-align: center;
 	line-height: 1;
 	color: #fff;
 }
@@ -56,20 +56,19 @@ h1, h2, h3, h4, h5, h6 {
 	width: 60px;
 	height: 3px;
 	background-color: #fff;
-	margin: 60px auto 0;
+	margin: 30px auto;
 }
 
 .intro__subtitle {
 	margin-bottom: 20px;
-	font-size: 72px;
+	font-size: 65px;
 	color: #fff;
 	font-family: 'Kaushan Script', cursive;
-	text-align: center;
 }
 
 /* Header */
 .header {
-	padding-top: 30px;
+	padding-top: 15px;
 	width: 100%;
 	position: absolute;
 	top: 0;
@@ -127,6 +126,77 @@ h1, h2, h3, h4, h5, h6 {
 	color: #fce38a;
 }
 
-.nav__link:hover:after {
+.nav__link:hover:after,
+.nav__link.active:after {
 	opacity: 1;
+}
+
+.nav__link.active {
+	color: #fce38a;
+}
+
+/* Buttons */
+.btn {
+	display: inline-block;
+	vertical-align: top;
+	padding: 8px 30px;
+	border: 3px solid #fff;
+	font-size: 14px;
+	font-weight: 700;
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	transition: background 0.1s linear, color 0.1s linear;
+
+}
+
+.btn:hover {
+	background-color: #fff;
+	color: #333;
+}
+
+/* Slider */
+.slider {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 1;
+}
+
+.slider__inner {
+	display: flex;
+	justify-content: space-between;
+}
+
+.slider__item {
+	width: 23%;
+	padding: 20px 0;
+	position: relative;
+	border-top: 3px solid #fff;
+	font-size: 15px;
+	color: #fff;
+	opacity: 0.7;
+	text-transform: uppercase;
+}
+
+.slider__item.active {
+	opacity: 1;
+}
+
+.slider__item.active:before {
+	content: "";
+	display: block;
+	width: 70px;
+	height: 3px;
+	position: absolute;
+	top: -3px;
+	left: 0;
+	z-index: 1;
+	background-color: #f38181;
+}
+
+.slider__num {
+	font-size: 18px;
+	font-weight: 700;
 }
