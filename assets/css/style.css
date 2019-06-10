@@ -16,6 +16,15 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 0;
 }
 
+hr {
+	border: 0;
+	display: block;
+	width: 100%;
+	height: 1px;
+	margin: 40px 0;
+	background-color: #e5e5e5;
+}
+
 /*Container */
 .container {
 	width: 100%;
@@ -212,7 +221,7 @@ h1, h2, h3, h4, h5, h6 {
 	margin-bottom: 40px;
 	width: 100%;
 	max-width: 950px;
-	margin: 0 auto 40px;
+	margin: 0 auto 50px;
 	text-align: center;
 	
 }
@@ -328,4 +337,35 @@ h1, h2, h3, h4, h5, h6 {
 .stat__text {
 	font-size: 14px;
 	text-transform: uppercase;
+}
+
+/* Services */
+
+.services {
+	display: flex;
+}
+
+.services__item {
+	flex: 1 1 0;
+	padding-left: 85px;
+	padding-right: 35px;
+	position: relative;
+}
+
+.services__icon {
+	position: absolute;
+	top: 0;
+	left: 28px;
+}
+
+.services__title {
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	font-size: 14px;
+	color: #333;
+}
+
+.services__text {
+	font-size: 15px;
+	color: #999;
 }
